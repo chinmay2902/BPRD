@@ -19,6 +19,198 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/event_section.css">
+
+    <style>
+        footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 50px 100px;
+            background: #0c0c0c;
+
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-left: auto;
+        }
+
+        footer .container .sec {
+            margin-right: 30px;
+        }
+
+        footer .container .sec.aboutus {
+            width: 40%;
+        }
+
+        footer .container h2 {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #999;
+        }
+
+        .bigbtn.invert {
+            background: #a5f0d3;
+            color: #001f3d;
+            text-decoration: none;
+
+        }
+
+        .bigbtn {
+
+            font-weight: 800;
+            text-decoration: none;
+            padding: 16px 64px;
+            display: inline-block;
+            width: fit-content;
+            transition: all 0.25s;
+            clip-path: polygon(0% 0%, calc(100% - 32px) 0%, 100% 100%, 32px 100%);
+            cursor: pointer;
+        }
+
+        .sci {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .sci li {
+            list-style: none;
+        }
+
+        .slide-imgs {
+            display: flex;
+        }
+
+        .slide-imgs li {
+            list-style: none;
+            padding: 0 90px;
+        }
+
+        .slide-imgs li a {
+            display: inline-block;
+            width: 80px;
+        }
+
+        .slide-imgs li a img {
+            width: 206px;
+        }
+
+        .sci li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .sci li a:hover {
+            background: rgb(14, 153, 233);
+        }
+
+        .sci li a .fa {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .quickLinks {
+            position: relative;
+            width: 25%;
+        }
+
+        .quickLinks ul li {
+            list-style: none;
+        }
+
+        .quickLinks ul li a {
+            color: #999;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .quickLinks ul li a:hover {
+            color: #fff;
+        }
+
+        .contact {
+            width: calc(35% - 60px);
+            margin-right: 0 !important;
+        }
+
+        .contact .info {
+            position: relative;
+        }
+
+        .contact .info li {
+            list-style: none;
+            margin-bottom: 16px;
+
+        }
+
+        .contact .info li p {
+            margin: 0;
+        }
+
+        .contact .info li a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .copyrightText {
+            width: 100%;
+            background: #181818;
+            padding: 8px 100px;
+            text-align: center;
+            color: #999;
+        }
+
+        @media (max-width:991px) {
+            footer {
+                padding: 40px;
+            }
+
+            footer .container {
+                flex-direction: column;
+            }
+
+            footer .container .sec {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            footer .container .sec.aboutus,
+            .quickLinks,
+            .contact {
+                width: 100%;
+            }
+
+            .quickLinks ul li a {
+                margin-left: -13%;
+            }
+
+            .copyrightText {
+                padding: 8px 40px;
+            }
+
+            .bigbtn {
+                font-size: 10px;
+
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -68,121 +260,122 @@
         </div>
 
         <nav class="navbar navbar-expand-lg nav3">
-                <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="aboutus" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">ABOUT US</a>
-                                    <ul class="dropdown-menu" aria-labelledby="aboutus">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="traning" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">TRAINING</a>
-                                    <ul class="dropdown-menu" aria-labelledby="traning">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="research" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">RESEARCH & CA</a>
-                                    <ul class="dropdown-menu" aria-labelledby="research">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="modernization" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">MODERNIZATION</a>
-                                    <ul class="dropdown-menu" aria-labelledby="modernization">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="npm" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">NPM</a>
-                                    <ul class="dropdown-menu" aria-labelledby="npm">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="spd" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">SPD</a>
-                                    <ul class="dropdown-menu" aria-labelledby="spd">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="admin" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">ADMIN</a>
-                                    <ul class="dropdown-menu" aria-labelledby="admin">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="spc" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">SPC</a>
-                                    <ul class="dropdown-menu" aria-labelledby="spc">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="spconf" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">SP CONF. & POLICE EXPO</a>
-                                    <ul class="dropdown-menu" aria-labelledby="spconf">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="publication" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">PUBLICATIONS / REPORTS</a>
-                                    <ul class="dropdown-menu" aria-labelledby="publication">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dopo" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">DOPO</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dopo">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                    
-                                    </ul>
-                                </li>
-                    
-                    
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutus" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutus">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
                             </ul>
-                    
-                        </div>
-                    </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="traning" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">TRAINING</a>
+                            <ul class="dropdown-menu" aria-labelledby="traning">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="research" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">RESEARCH & CA</a>
+                            <ul class="dropdown-menu" aria-labelledby="research">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="modernization" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">MODERNIZATION</a>
+                            <ul class="dropdown-menu" aria-labelledby="modernization">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="npm" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">NPM</a>
+                            <ul class="dropdown-menu" aria-labelledby="npm">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="spd" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">SPD</a>
+                            <ul class="dropdown-menu" aria-labelledby="spd">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="admin" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">ADMIN</a>
+                            <ul class="dropdown-menu" aria-labelledby="admin">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="spc" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">SPC</a>
+                            <ul class="dropdown-menu" aria-labelledby="spc">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="spconf" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">SP CONF. & POLICE EXPO</a>
+                            <ul class="dropdown-menu" aria-labelledby="spconf">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="publication" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">PUBLICATIONS / REPORTS</a>
+                            <ul class="dropdown-menu" aria-labelledby="publication">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dopo" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">DOPO</a>
+                            <ul class="dropdown-menu" aria-labelledby="dopo">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -194,127 +387,190 @@
     <section id="section__2" class="container">
 
         <div class="row">
-                <div class="col-md-6">
-                        <div class="whats-new">
-                                <div>
-                                        What's New
-                                </div>
-                        </div>
-                        <div class="section__2-card my-5">
-                                <div class="card card-body shadow-sm px-5 w-100" id="whats-new">
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Women's Safety & Security - A Handbook for First Responders and Investigators in the Police (Research & Correctional Admin Division)</a> <span class="text-muted">(Uploaded on 10 Sep 2021)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newDirectory of Prison Officials in India 2021 (Research & Correctional Admin Division) View Document 2 Mb</a> <span class="text-muted">(Uploaded on 03 Oct 2021)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Women's Safety & Security - A Handbook for First Responders and Investigators in the Police (Research & Correctional Admin Division)</a> <span class="text-muted">(Uploaded on 10 Sep 2021)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newDirectory of Prison Officials in India 2021 (Research & Correctional Admin Division) View Document 2 Mb</a> <span class="text-muted">(Uploaded on 03 Oct 2021)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
-                                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newDirectory of Prison Officials in India 2021 (Research & Correctional Admin Division) View Document 2 Mb</a> <span class="text-muted">(Uploaded on 03 Oct 2021)</span></div>
-                                </div>
-                        </div>
+            <div class="col-md-6">
+                <div class="whats-new">
+                    <div>
+                        What's New
+                    </div>
                 </div>
-                <div class="col-md-6">
-                        <div class="section__2-header">
-                                <div class="events-btn" onclick="openCard('news-and-event')">News & events</div>
-                                <div class="press-release-btn" onclick="openCard('press-release')">Press Release</div>
-                                <div class="tender-btn" onclick="openCard('tender')">Tender</div>
-                        </div>
-                        
-                        <div class="section__2-card my-5">
-                        <div class="card card-body shadow-sm px-5 s2-card-div" id="news-and-event">
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
-                                        2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative Workflow Manual on Cyber Harassment Cases View
-                                        Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National Level Competition for BPRD'S Website Design View
-                                        Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur Seva<span class='text-muted'>(Uploaded on 07 Oct
-                                        2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05 Jan
-                                        2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
-                                        2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative Workflow Manual on Cyber Harassment Cases View
-                                        Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National Level Competition for BPRD'S Website Design View
-                                        Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur Seva<span class='text-muted'>(Uploaded on 07 Oct
-                                        2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05 Jan
-                                        2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
-                                        2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative Workflow Manual on Cyber Harassment Cases View
-                                        Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National Level Competition for BPRD'S Website Design View
-                                        Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur Seva<span class='text-muted'>(Uploaded on 07 Oct
-                                        2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05 Jan
-                                        2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                        </div>
-                        <div class="card card-body shadow-sm px-5 s2-card-div" id="press-release">
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
-                                        2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative Workflow Manual on Cyber Harassment Cases View
-                                        Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National Level Competition for BPRD'S Website Design View
-                                        Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur Seva<span class='text-muted'>(Uploaded on 07 Oct
-                                        2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05 Jan
-                                        2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                        </div>
-                        <div class="card card-body shadow-sm px-5 s2-card-div" id="tender">
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative Workflow Manual on Cyber Harassment Cases View
-                                        Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National Level Competition for BPRD'S Website Design View
-                                        Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur Seva<span class='text-muted'>(Uploaded on 07 Oct
-                                        2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05 Jan
-                                        2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
-                                        2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative Workflow Manual on Cyber Harassment Cases View
-                                        Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National Level Competition for BPRD'S Website Design View
-                                        Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur Seva<span class='text-muted'>(Uploaded on 07 Oct
-                                        2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05 Jan
-                                        2022)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police Organization View Document 8 Mb</a><span
-                                        class='text-muted'>(Uploaded on 31 May 2020)</span></div>
-                                <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of AIPDM</a><span class='text-muted'>(Uploaded on 30
-                                        Jan 2019)</span></div>
-                        </div>
-                        </div>
+                <div class="section__2-card my-5">
+                    <div class="card card-body shadow-sm px-5 w-100" id="whats-new">
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Women's Safety &
+                                Security - A Handbook for First Responders and Investigators in the Police (Research &
+                                Correctional Admin Division)</a> <span class="text-muted">(Uploaded on 10 Sep
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the
+                                Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View
+                                Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newDirectory of
+                                Prison Officials in India 2021 (Research & Correctional Admin Division) View Document 2
+                                Mb</a> <span class="text-muted">(Uploaded on 03 Oct 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Women's Safety &
+                                Security - A Handbook for First Responders and Investigators in the Police (Research &
+                                Correctional Admin Division)</a> <span class="text-muted">(Uploaded on 10 Sep
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the
+                                Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View
+                                Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the
+                                Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View
+                                Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newDirectory of
+                                Prison Officials in India 2021 (Research & Correctional Admin Division) View Document 2
+                                Mb</a> <span class="text-muted">(Uploaded on 03 Oct 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Proceedings of the
+                                Webinar on Woman Safety with Sensitivity (Research & Correctional Admin Division) View
+                                Document 5 Mb</a> <span class="text-muted">(Uploaded on 04 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newDirectory of
+                                Prison Officials in India 2021 (Research & Correctional Admin Division) View Document 2
+                                Mb</a> <span class="text-muted">(Uploaded on 03 Oct 2021)</span></div>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="section__2-header">
+                    <div class="events-btn" onclick="openCard('news-and-event')">News & events</div>
+                    <div class="press-release-btn" onclick="openCard('press-release')">Press Release</div>
+                    <div class="tender-btn" onclick="openCard('tender')">Tender</div>
+                </div>
+
+                <div class="section__2-card my-5">
+                    <div class="card card-body shadow-sm px-5 s2-card-div" id="news-and-event">
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at
+                                Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative
+                                Workflow Manual on Cyber Harassment Cases View
+                                Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National
+                                Level Competition for BPRD'S Website Design View
+                                Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur
+                                Seva<span class='text-muted'>(Uploaded on 07 Oct
+                                    2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05
+                                Jan
+                                2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at
+                                Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative
+                                Workflow Manual on Cyber Harassment Cases View
+                                Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National
+                                Level Competition for BPRD'S Website Design View
+                                Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur
+                                Seva<span class='text-muted'>(Uploaded on 07 Oct
+                                    2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05
+                                Jan
+                                2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at
+                                Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative
+                                Workflow Manual on Cyber Harassment Cases View
+                                Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National
+                                Level Competition for BPRD'S Website Design View
+                                Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur
+                                Seva<span class='text-muted'>(Uploaded on 07 Oct
+                                    2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05
+                                Jan
+                                2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                    </div>
+                    <div class="card card-body shadow-sm px-5 s2-card-div" id="press-release">
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at
+                                Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative
+                                Workflow Manual on Cyber Harassment Cases View
+                                Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National
+                                Level Competition for BPRD'S Website Design View
+                                Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur
+                                Seva<span class='text-muted'>(Uploaded on 07 Oct
+                                    2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05
+                                Jan
+                                2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                    </div>
+                    <div class="card card-body shadow-sm px-5 s2-card-div" id="tender">
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative
+                                Workflow Manual on Cyber Harassment Cases View
+                                Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National
+                                Level Competition for BPRD'S Website Design View
+                                Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur
+                                Seva<span class='text-muted'>(Uploaded on 07 Oct
+                                    2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05
+                                Jan
+                                2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Yoga at
+                                Workplace</a><span class='text-muted'>(Uploaded on 24 Jun
+                                2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Investigative
+                                Workflow Manual on Cyber Harassment Cases View
+                                Document 27 Mb</a><span class='text-muted'>(Uploaded on 12 Apr 2021)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>Rules for National
+                                Level Competition for BPRD'S Website Design View
+                                Document 80 Kb</a><span class='text-muted'>(Uploaded on 08 Jan 2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newPolice Aur
+                                Seva<span class='text-muted'>(Uploaded on 07 Oct
+                                    2021)Bureau Darpan View Document 2 Mb</a><span class='text-muted'>(Uploaded on 05
+                                Jan
+                                2022)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>newData on Police
+                                Organization View Document 8 Mb</a><span class='text-muted'>(Uploaded on 31 May
+                                2020)</span></div>
+                        <div class="card-links"><a href="#"><i class="far fa-hand-point-right"></i>General Rules of
+                                AIPDM</a><span class='text-muted'>(Uploaded on 30
+                                Jan 2019)</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
     <section class="gallery-container">
-     
+
     </section>
 
     <div class="about-container">
@@ -337,14 +593,69 @@
                     society has culminated in inputs for policy imperatives in policing and prisons. The verticals of
                     the BPR&D on Research, Modernization, Capacity Building and the National Police Missions have
                     contributed substantially in studying problems and defining solutions by Promoting Good Practices...
-                    <a href="#"> Read More</a></p>
+                    <a href="#"> Read More</a>
+                </p>
                 <p> <strong>BALAJI SRIVASTAVA, IPS
                         Director General, BPR&D</strong> </p>
             </div>
         </div>
     </div>
 
-  
+
+    <footer id="contactUsa">
+        <div class="slideFooter">
+            <ul class="slide-imgs">
+                <li><a href="#" target="_blank"><img src="https://bprd.nic.in/images/digitalindia.png" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="https://bprd.nic.in/images/my-gov.png" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="https://bprd.nic.in/images/sb.png" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="https://bprd.nic.in/images/india-gov-in.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>Description </h2>
+                <p>l.</p>
+                <ul class="sci">
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#aboutDiv">About Us</a></li>
+                    <li><a href="#teamUp">Team</a></li>
+                    <li><a href="{% url 'blogs' %}">Blogs</a></li>
+                </ul>
+
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <p>Visitor Count: </p>
+                        <a href="https://www.webfreecounter.com/" target="_blank"><img
+                                    src="https://www.webfreecounter.com/hit.php?id=zvreqnpq&nd=6&style=71" border="0"
+                                    alt="visitor counter"></a>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:12345678900">+91 9920562276</a><br><a href="tel:12345678900">+91 8082186545</a>
+                        </p>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>This website belongs to "Bureau of Police Research and Development", Ministry of Home Affairs, Govt. Of India
+            Site Designed, Developed and Hosted by National Informatics Centre</p>
+    </div>
+
 
 
 
