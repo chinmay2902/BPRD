@@ -19,198 +19,7 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/event_section.css">
-
-    <style>
-        footer {
-            position: relative;
-            width: 100%;
-            height: auto;
-            padding: 50px 100px;
-            background: #0c0c0c;
-
-        }
-
-        footer .container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-            margin-left: auto;
-        }
-
-        footer .container .sec {
-            margin-right: 30px;
-        }
-
-        footer .container .sec.aboutus {
-            width: 40%;
-        }
-
-        footer .container h2 {
-            position: relative;
-            color: #fff;
-            font-weight: 500;
-            margin-bottom: 15px;
-        }
-
-        footer p {
-            color: #999;
-        }
-
-        .bigbtn.invert {
-            background: #a5f0d3;
-            color: #001f3d;
-            text-decoration: none;
-
-        }
-
-        .bigbtn {
-
-            font-weight: 800;
-            text-decoration: none;
-            padding: 16px 64px;
-            display: inline-block;
-            width: fit-content;
-            transition: all 0.25s;
-            clip-path: polygon(0% 0%, calc(100% - 32px) 0%, 100% 100%, 32px 100%);
-            cursor: pointer;
-        }
-
-        .sci {
-            margin-top: 20px;
-            display: flex;
-        }
-
-        .sci li {
-            list-style: none;
-        }
-
-        .slide-imgs {
-            display: flex;
-        }
-
-        .slide-imgs li {
-            list-style: none;
-            padding: 0 90px;
-        }
-
-        .slide-imgs li a {
-            display: inline-block;
-            width: 80px;
-        }
-
-        .slide-imgs li a img {
-            width: 206px;
-        }
-
-        .sci li a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: #222;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10px;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-
-        .sci li a:hover {
-            background: rgb(14, 153, 233);
-        }
-
-        .sci li a .fa {
-            color: #fff;
-            font-size: 20px;
-        }
-
-        .quickLinks {
-            position: relative;
-            width: 25%;
-        }
-
-        .quickLinks ul li {
-            list-style: none;
-        }
-
-        .quickLinks ul li a {
-            color: #999;
-            text-decoration: none;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
-
-        .quickLinks ul li a:hover {
-            color: #fff;
-        }
-
-        .contact {
-            width: calc(35% - 60px);
-            margin-right: 0 !important;
-        }
-
-        .contact .info {
-            position: relative;
-        }
-
-        .contact .info li {
-            list-style: none;
-            margin-bottom: 16px;
-
-        }
-
-        .contact .info li p {
-            margin: 0;
-        }
-
-        .contact .info li a {
-            color: #999;
-            text-decoration: none;
-        }
-
-        .copyrightText {
-            width: 100%;
-            background: #181818;
-            padding: 8px 100px;
-            text-align: center;
-            color: #999;
-        }
-
-        @media (max-width:991px) {
-            footer {
-                padding: 40px;
-            }
-
-            footer .container {
-                flex-direction: column;
-            }
-
-            footer .container .sec {
-                margin-right: 0;
-                margin-bottom: 40px;
-            }
-
-            footer .container .sec.aboutus,
-            .quickLinks,
-            .contact {
-                width: 100%;
-            }
-
-            .quickLinks ul li a {
-                margin-left: -13%;
-            }
-
-            .copyrightText {
-                padding: 8px 40px;
-            }
-
-            .bigbtn {
-                font-size: 10px;
-
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -246,20 +55,21 @@
 
         </nav>
         <div class="nav2">
-            <div class="d-flex justify-content-center">
-                <img class="logo" src="./assests/logo/logo.png" alt="logo">
-                <div class="mt-3 ms-2">
-                    <h1><strong>Bureau of Police</strong></h1>
-                    <h1><strong>Research and Development</strong></h1>
+            <div class="d-flex">
+                <img class="logo " src="./assests/logo/logo1.png" alt="logo">
+                <div class="mt-3 ms-5">
+                    <h1><strong style="color:#272727">Bureau of Police Research & Development, Ministry of Home
+                            Affair</strong></h1>
+                    <h1><strong style="color:#272727">पुलिस अनुसंधान एवं विकास ब्यूरो, गृह मंत्रालय</strong></h1>
                 </div>
             </div>
-            <div>
+            <!-- <div>
                 <a href="#">link</a>
-            </div>
+            </div> -->
 
         </div>
 
-        <nav class="navbar navbar-expand-lg nav3">
+        <nav class="navbar navbar-expand-lg nav3 navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -267,9 +77,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0 py-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutus" role="button"
@@ -277,7 +87,7 @@
                             <ul class="dropdown-menu" aria-labelledby="aboutus">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -286,7 +96,7 @@
                             <ul class="dropdown-menu" aria-labelledby="traning">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -295,7 +105,7 @@
                             <ul class="dropdown-menu" aria-labelledby="research">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -304,7 +114,7 @@
                             <ul class="dropdown-menu" aria-labelledby="modernization">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -313,7 +123,7 @@
                             <ul class="dropdown-menu" aria-labelledby="npm">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -322,7 +132,7 @@
                             <ul class="dropdown-menu" aria-labelledby="spd">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -331,7 +141,7 @@
                             <ul class="dropdown-menu" aria-labelledby="admin">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -340,7 +150,7 @@
                             <ul class="dropdown-menu" aria-labelledby="spc">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -349,7 +159,7 @@
                             <ul class="dropdown-menu" aria-labelledby="spconf">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -358,7 +168,7 @@
                             <ul class="dropdown-menu" aria-labelledby="publication">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -367,21 +177,47 @@
                             <ul class="dropdown-menu" aria-labelledby="dopo">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
+            
                             </ul>
                         </li>
-
-
+            
+            
                     </ul>
-
+            
                 </div>
             </div>
         </nav>
     </header>
 
-    <img class="banner"
-        src="https://cdnbbsr.s3waas.gov.in/s3c92a10324374fac681719d63979d00fe/uploads/2021/09/2021092064.jpg"
-        alt="azadi ka mahotsav" draggable="false">
+    <section class="banner">
+        <div id="banner-id" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#banner-id" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#banner-id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#banner-id" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="banner"
+                        src="https://cdnbbsr.s3waas.gov.in/s3c92a10324374fac681719d63979d00fe/uploads/2021/09/2021092064.jpg"
+                        alt="azadi ka mahotsav" draggable="false">
+                </div>
+                <div class="carousel-item">
+                    <img class="banner"
+                        src="https://bprd.nic.in/WriteReadData/Gallery/PhotoGallery/Thumbnail/NPM%20third%20NC.JPG"
+                        alt="azadi ka mahotsav" draggable="false">
+                </div>
+                <div class="carousel-item">
+                    <img class="banner"
+                        src="https://cdnbbsr.s3waas.gov.in/s3c92a10324374fac681719d63979d00fe/uploads/2021/09/2021092064.jpg"
+                        alt="azadi ka mahotsav" draggable="false">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
 
     <section id="section__2" class="container">
@@ -569,6 +405,8 @@
         </div>
 
     </section>
+
+
     <section class="gallery-container">
 
     </section>
