@@ -8,91 +8,110 @@
     <title>BPRD</title>
 
     <!-- BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- fontA -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/event_section.css">
 </head>
 
 <body>
 
-    <nav class="nav1">
-        <div class="ml-3">
-            <a href="#">Goverment of India</a>
-        </div>
-        <div class="mr-3 d-flex justify-content-end">
-            <div>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Screen Reader"><i
-                    class="fas fa-volume-up"></i></a>
+    <header>
+        <nav class="nav1">
+            <div class="ml-3">
+                <a href="#">Goverment of India</a>
             </div>
-            <div>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Site Map"><i class="fas fa-sitemap"></i></a>
+            <div class="mr-3 d-flex justify-content-end">
+                <div>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Screen Reader"><i
+                            class="fas fa-volume-up"></i></a>
+                </div>
+                <div>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Site Map"><i
+                            class="fas fa-sitemap"></i></a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#"><i class="fas fa-wheelchair"></i></a>
+                    <div class="dropdown-content">
+                        <a>A+</a>
+                        <a>A</a>
+                        <a>A-</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Language">
+                        हिंदी</a>
+                </div>
+
             </div>
-            
-            <div class="dropdown">
-                <a  href="#"><i class="fas fa-wheelchair"></i></a>
-                <div class="dropdown-content">
-                    <a>A+</a>
-                    <a>A</a>
-                    <a>A-</a>
+
+        </nav>
+        <div class="nav2">
+            <div class="d-flex justify-content-center">
+                <img class="logo" src="./assests/logo/logo.png" alt="logo">
+                <div class="mt-3 ms-2">
+                    <h1><strong>Bureau of Police</strong></h1>
+                    <h1><strong>Research and Development</strong></h1>
                 </div>
             </div>
             <div>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Language">
-                    हिंदी</a>
+                <a href="#">link</a>
             </div>
-            
+
         </div>
 
-    </nav>
-    <div class="nav2">
-        <div class="d-flex justify-content-center">
-            <img class="logo" src="logo.png" alt="logo">
-            <div class="mt-3 ms-2">
-                <h1><strong>Bureau of Police</strong></h1>
-                <h1><strong>Research and Development</strong></h1>
-         </div>        
-        </div>
-        <div>
-            <a href="#">link</a>
-        </div>
+        <nav class="navbar navbar-expand-lg nav3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!-- <a class="navbar-brand" href="#">Home</a> -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
 
-    </div>
+                    </ul>
 
-    <nav class="navbar navbar-expand-lg nav3">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Home</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <img class="banner" src="https://cdnbbsr.s3waas.gov.in/s3c92a10324374fac681719d63979d00fe/uploads/2021/09/2021092064.jpg"
-        alt="azadi ka mahotsav" draggable="false">
+   <div class="container">
+    <img class="banner"
+    src="https://cdnbbsr.s3waas.gov.in/s3c92a10324374fac681719d63979d00fe/uploads/2021/09/2021092064.jpg"
+    alt="azadi ka mahotsav" draggable="false">
+   </div>
+
+   <section id="section__2" include-html-temp='event_section.html'>
+
+   </section>
+
+    
 
 
 
     <!-- js -->
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/event_section.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 

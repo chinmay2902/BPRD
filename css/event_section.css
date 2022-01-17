@@ -1,0 +1,113 @@
+#section__2 {    
+    padding: 3rem;
+}
+
+.section__2-header {
+    width: 75%;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__2-header div {
+    background-color: #052963;
+    color: #f5f5f5;
+    border-radius: 12px;
+    width: 100%;
+    padding: 1.2rem 0.1rem;
+    text-align: center;
+    margin: 0 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.section__2-header div:hover {
+    background-color: #2aacea;
+    padding: 1.1rem .1rem;
+}
+
+.section__2-card .card {
+    width: 60%;
+    margin: auto;
+    height: 45vh;
+    overflow: scroll;
+    border: none;
+    background: #ffffff00;
+}
+
+.section__2-card .card::-webkit-scrollbar {
+    display: none;
+}
+
+.section__2-card .card div{
+    margin-bottom: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.card-links a {
+    text-decoration: none;
+    color: #035181;
+    margin-right: .3rem;
+}
+
+.card-links a:hover {
+    color: #2aacea;
+}
+
+#press-release {
+    display: none;
+}
+
+#tender {
+    display: none;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #section__2 {
+        padding: 1rem;
+    }
+
+    .section__2-header {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section__2-header div {
+        margin: 0.1rem;
+        font-size: 0.7rem;
+    }
+
+    .section__2-card .card {
+        width: 75%;
+    }
+
+    .section__2-card .card {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+
+    .section__2-card {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .section__2-header {
+        flex-direction: row;
+    }
+
+    .section__2-card .card {
+        width: 100%;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {} */
+/* Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {} */
