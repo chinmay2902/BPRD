@@ -96,6 +96,14 @@
         margin: 0.1rem;
         font-size: 0.7rem;
     }
+    .whats-new{
+        width: 100%;
+        margin:auto;
+    }
+    .whats-new div{
+        margin: 0.1rem;
+        font-size: 0.7rem;
+    }
 
 
     .section__2-card .card {

@@ -145,7 +145,17 @@ hr.about-headBorder {
 .banner {
   width: 100%;
   height: 55vh;
+
 }
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+  .banner {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
 @media (max-width: 767.98px) {
   .nav1 a,
   .nav2 a,
@@ -154,6 +164,3 @@ hr.about-headBorder {
   }
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-}
