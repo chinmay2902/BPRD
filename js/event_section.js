@@ -15,7 +15,7 @@ function divScroll(elem) {
   function scrollLogic() {
     if (isPaused === false) {
       x.scrollBy(0, 1);
-      time = setTimeout(scrollLogic, 20);
+      time = setTimeout(scrollLogic, 90);
     }
   }
   x.addEventListener("mouseenter", () => {
