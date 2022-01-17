@@ -55,6 +55,9 @@
 .card-links a:hover {
     color: #2aacea;
 }
+.card-links a i{
+    margin-right: 1.5rem;
+}
 
 #press-release {
     display: none;
@@ -103,6 +106,9 @@
 
     .section__2-card .card {
         width: 100%;
+    }
+    .section__2-card .card div{
+        font-size: 12px;
     }
 }
 
