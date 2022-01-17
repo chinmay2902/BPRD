@@ -14,7 +14,7 @@
     color: #f5f5f5;
     border-radius: 12px;
     width: 100%;
-    padding: 1.2rem 0.1rem;
+    padding: 0.8rem 0.1rem;
     text-align: center;
     margin: 0 1.2rem;
     font-size: 1.1rem;
@@ -25,7 +25,7 @@
 
 .section__2-header div:hover {
     background-color: #2aacea;
-    padding: 1.1rem .1rem;
+    padding: .7rem .1rem;
 }
 
 .section__2-card .card {
@@ -54,6 +54,9 @@
 
 .card-links a:hover {
     color: #2aacea;
+}
+.card-links a i{
+    margin-right: 1.5rem;
 }
 
 #press-release {
@@ -93,6 +96,9 @@
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
     }
+    .section__2-card .card div{
+        font-size: 12px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -103,6 +109,9 @@
 
     .section__2-card .card {
         width: 100%;
+    }
+    .section__2-card .card div{
+        font-size: 12px;
     }
 }
 
