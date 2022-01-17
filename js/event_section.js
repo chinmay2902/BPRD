@@ -1,4 +1,4 @@
-let time;
+let time, wnTime;
 function openCard(elem) {
   let x = document.getElementsByClassName("s2-card-div");
   for (let i = 0; i < x.length; i++) {
@@ -30,3 +30,22 @@ function divScroll(elem) {
   scrollLogic();
 }
 divScroll('news-and-event')
+
+let isPausedWn = false;
+let wn = document.getElementById('whats-new');
+function whatsnewScroll() {
+  if (isPausedWn === false) {
+    wn.scrollBy(0, 1);
+    wnTime = setTimeout(whatsnewScroll, 90);
+  }
+}
+wn.addEventListener("mouseenter", () => {
+  isPausedWn = true;
+  clearTimeout(wnTime)
+});
+wn.addEventListener("mouseleave", () => {
+  isPausedWn = false;
+  clearTimeout(wnTime)
+  whatsnewScroll();
+});
+whatsnewScroll();

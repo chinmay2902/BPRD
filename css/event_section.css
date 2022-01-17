@@ -3,7 +3,6 @@
 }
 
 .section__2-header {
-    width: 75%;
     margin: 1.5rem auto;
     display: flex;
     justify-content: space-between;
@@ -27,9 +26,24 @@
     background-color: #2aacea;
     padding: .7rem .1rem;
 }
+.whats-new{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem auto;
+}
+.whats-new div{
+    background-color: #052963;
+    color: #f5f5f5;
+    border-radius: 12px;
+    width: 100%;
+    padding: 0.8rem 0.1rem;
+    text-align: center;
+    margin: 0 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 .section__2-card .card {
-    width: 60%;
     margin: auto;
     height: 45vh;
     overflow: scroll;
@@ -83,9 +97,6 @@
         font-size: 0.7rem;
     }
 
-    .section__2-card .card {
-        width: 75%;
-    }
 
     .section__2-card .card {
         padding-left: .5rem !important;
