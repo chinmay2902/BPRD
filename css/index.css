@@ -21,7 +21,7 @@ body {
   color: black;
   background-color: #b1a494;
 }
-.dropdown-content {
+.nav1 .dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -30,26 +30,46 @@ body {
   right: 0rem;
   z-index: 1;
 }
+.nav1 .dropdown:hover .dropdown-content {
+  display: inline;
+}
+
 
 .nav2 {
   color: black;
-  padding: 2rem 2rem;
+  padding: 0.8rem 2rem;
   background-color: #8cc6e0;
 }
-.logo {
+.nav2 .logo {
   width: 5rem;
   height: 5rem;
+}
+.nav2 .grid-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.nav2 .right-grid img{
+  width: 100px;
+  height: 20px;
+  border-radius: 0.2rem;
+}
+.nav2 .right-grid .grid-row{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.nav2 .right-grid .grid-col{
+  margin: 0.5rem 1rem ;
 }
 h1 {
   font-size: 18px;
   font-weight: 400;
 }
 
+
 .nav3 {
   padding: 0;
 }
-.bg-dark,
-.dropdown-menu {
+.bg-dark, .dropdown-menu {
   background-color: #052963 !important;
 }
 .nav3 .nav-item .nav-link,
@@ -76,18 +96,22 @@ h1 {
   padding-bottom: 0 !important;
 }
 
+
 .nav4{
   height: 1.5rem;
   padding-left: 1rem;
   background-color: #ff9000;
+}
+.nav4 a{
+  text-decoration: none;
 }
 .scrollBar{
   display:grid;
   grid-template-columns: 1fr 10fr;
 }
 .blink {
-  animation: blinker 1s linear infinite;
-  color: #fff;
+  animation: blinker 0.5s linear infinite;
+  color: #052963;
 }
 
 @keyframes blinker {
@@ -222,6 +246,7 @@ h1 {
   .nav2 h1 {
     font-size: 1rem;
   }
+  
 }
 
 /* Mobile devices*/
@@ -249,6 +274,13 @@ h1 {
   }
   .logo {
     margin-top: 1.4rem;
+  }
+  .nav2 .grid-container{
+    grid-template-columns: none;
+  }
+  .nav2 {
+    padding: 0;
+    
   }
 }
 
