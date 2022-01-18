@@ -4,7 +4,7 @@ body {
   top: 0;
   left: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 .nav1 {
   color: black;
@@ -33,8 +33,8 @@ body {
 
 .nav2 {
   color: black;
-  padding: 0.5rem 2rem;
-  background-color: #b5d2f4;
+  padding: 2rem 2rem;
+  background-color: #8cc6e0;
 }
 .logo {
   width: 5rem;
@@ -55,7 +55,6 @@ h1 {
 .nav3 .nav-item .nav-link,
 .dropdown-item {
   color: white !important;
-
 }
 .nav3 .nav-item:hover,
 .dropdown-item:hover {
@@ -112,15 +111,44 @@ h1 {
 }
 
 /* *************************about us********************** */
-hr.about-headBorder {
-  border-top: 6px solid #052963;
-  opacity: inherit;
-  width: 120px;
-  height: 0;
-  margin: 0 auto 35px;
-  border-radius: 5px;
-  display: block;
+.about_us{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
 }
+
+.page_heading{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+
+.page_heading::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #2aacea;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+      width: 100px;
+  }
+  50%{
+      width: 200px;
+  }
+  100%{
+      width: 100px;
+  }
+}
+
 
 .about-container {
   padding-right: 15px;
