@@ -79,25 +79,21 @@ h1 {
 .nav4{
   height: 1.5rem;
   padding-left: 1rem;
+  background-color: #ff9000;
 }
 .scrollBar{
   display:grid;
   grid-template-columns: 1fr 10fr;
 }
-.importantNotes{
-  display:flex;
-  flex-direction: row;
-  max-width: 100%;
-  overflow-x: auto;
+.blink {
+  animation: blinker 1s linear infinite;
+  color: #fff;
 }
-#filler {
-  position:relative;
-  border-radius:10px; 
-  transition: left 0.3s ease;
-}
-.scroll-items{
-  float:left;
-  text-align:center;
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 
