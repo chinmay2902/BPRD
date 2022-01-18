@@ -55,7 +55,6 @@ h1 {
 .nav3 .nav-item .nav-link,
 .dropdown-item {
   color: white !important;
-  padding: 0.5rem 1rem !important;
 }
 .nav3 .nav-item:hover,
 .dropdown-item:hover {
