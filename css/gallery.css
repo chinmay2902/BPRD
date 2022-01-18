@@ -27,12 +27,15 @@
     width: 100%;
     opacity: 0;
     border-radius: 12px;
-    background-color: #0529639d;
+    background-color: #062049d0;
     cursor: pointer;
     transition: all .5s ease-in-out;
   }
 .gallery-div .image-card:hover .overlay{
     opacity: 1;
+}
+.gallery-div .card{
+    border-radius: 12px;
 }
 
 .overlay-text{

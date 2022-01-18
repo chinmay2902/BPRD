@@ -8,7 +8,7 @@ footer {
 
 footer .container {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-top: 3rem;
   /* flex-wrap: wrap;
   flex-direction: row;
