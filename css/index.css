@@ -95,6 +95,7 @@ h1 {
   position:relative;
   border-radius:10px; 
   transition: left 0.3s ease;
+  overflow-x:scroll;
 }
 .scroll-items{
   float:left;
