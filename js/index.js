@@ -1,25 +1,16 @@
-// funtion to include html
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    file = elmnt.getAttribute("include-html-temp");
-    if (file) {
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          elmnt.removeAttribute("include-html-temp");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      return;
-    }
+function move() {
+  if (position <= 4) {
+      position++;
+  } else {
+      position = 0;
   }
-};
+  
+  moduleOffset =  document.querySelector(".scroll-items").offsetWidth;
+  
+  filler = document.querySelector("#filler");
+  
+  filler.style.left = -( position* moduleOffset) + "px";
+  
+}
 
-includeHTML()
+setInterval(move, 100);
