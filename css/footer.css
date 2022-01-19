@@ -7,20 +7,13 @@ footer {
 }
 
 footer .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   margin-top: 3rem;
-  /* flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: auto; */
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 footer .container .sec {
-  margin-right: 30px;
-}
-
-footer .container .sec.aboutus {
-  width: 25%;
+  text-align: center;
 }
 
 
@@ -39,6 +32,8 @@ footer p {
 .sci {
   padding: 0;
   display: flex;
+  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .sci li {
@@ -79,35 +74,32 @@ footer p {
 }
 
 .fb a:hover {
-  background: rgb(14, 153, 233);
-  color: #052963;
+  background: #fff;
+  color: rgb(14, 153, 233);
 }
 .insta a:hover {
-  background: rgb(14, 153, 233);
+  background: #fff;
   color: #BC1171;
 }
 .yt a:hover {
-  background: rgb(14, 153, 233);
+  background: #fff;
   color: red;
 }
 .twit a:hover {
-  background: rgb(14, 153, 233);
-  color: #052963;
+  background: #fff;
+  color: rgb(14, 153, 233);
 }
 
 .sci li a .fa {
   color: #fff;
   font-size: 20px;
 }
-
-.quickLinks {
-  width: 25%;
-}
 .quickLinks ul{
-  padding: 0
+  padding-left: 4rem;
 }
 .quickLinks ul li {
   list-style: none;
+  text-align: start;
 }
 
 .quickLinks ul li a {
@@ -122,31 +114,25 @@ footer p {
 }
 
 .quickUl{
-  display: flex;
-}
-.subUl{
-  padding-left: 50px !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.contact {
-  width: calc(35% - 60px);
-  margin-right: 0 !important;
-}
-
-.contact .info {
+ .info {
   position: relative;
+  padding: 0;
 }
 
-.contact .info li {
+ .info li {
   list-style: none;
   margin-bottom: 16px;
 }
 
-.contact .info li p {
+ .info li p {
   margin: 0;
 }
 
-.contact .info li a {
+ .info li a {
   color: #999;
   text-decoration: none;
 }
@@ -169,13 +155,11 @@ footer p {
   }
 
   footer .container .sec {
-    margin-right: 0;
     margin-bottom: 40px;
   }
 
   footer .container .sec.aboutus,
-  .quickLinks,
-  .contact {
+  .quickLinks {
     width: 100%;
   }
 
@@ -207,6 +191,9 @@ footer p {
     grid-template-columns: auto auto;
   }
   footer .container {
-    flex-direction: column;
+    grid-template-columns: none;
+  }
+  .visitor{
+    padding-left: 15px;
   }
 }

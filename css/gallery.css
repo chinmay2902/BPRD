@@ -52,37 +52,34 @@ input{
 
 
 .top-content{
-    background-color: lightgray;
     width: 90%;
     margin: 0 auto 20px auto;
-    height: 60px;
-    /* display: flexx; */
-    align-items: center;
     border-radius: 5px;
     box-shadow: 3px 3px 5px lightgray;
+    height: 50vh;
+    background-color: blue;
 }
 
 .top-content h3{
-    height: 100%;
     background-color: lightgray;
-    /* line-height: 60px; */
+    margin-bottom: 0 !important;
     padding: 17px 50px;
     color:white;
 }
 
 label{
-    /* display: block; */
-    height:100%;
-    margin: 0 20px;
-    /* line-height: 60px; */
+    display: block;
+    padding: 0.5rem 2rem;
     font-size: 18px;
     color:gray;
     cursor: pointer;
-    transition: color .5s;   
+    transition: color .5s;
+    text-align: left;   
 }
 
 label:hover{
     color: black;
+    background-color: lightblue;
 }
 
 .photo-gallery{
