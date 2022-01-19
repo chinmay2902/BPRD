@@ -25,7 +25,7 @@ input{
     position: absolute;
     width: 100px;
     height: 3px;
-    background-color: crimson;
+    background-color: #2494be;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
