@@ -240,9 +240,6 @@ label:hover{
     display: inline-block;
     vertical-align: top
 }
-.breadcrumb-arrow li:not(:first-child) {
-    margin-left: -5px
-}
 .breadcrumb-arrow li+li:before {
     padding: 0;
     content: ""
