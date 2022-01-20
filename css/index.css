@@ -54,7 +54,7 @@ body {
   border-radius: 0.2rem;
 }
 .nav2 .right-grid .grid-row{
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .nav2 .right-grid .grid-col{
@@ -246,6 +246,9 @@ h1 {
   .nav2 h1 {
     font-size: 1rem;
   }
+  .scrollBar {
+    grid-template-columns: 2fr 10fr;
+  }
   
 }
 
@@ -282,6 +285,24 @@ h1 {
     padding: 0;
     
   }
+  .scrollBar {
+    grid-template-columns: 5fr 10fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav2 .grid-container{
+    display: grid;
+    grid-template-columns: none;
+  }
+  .nav2 .right-grid{
+    display: flex;
+    justify-content: center;
+  }
+  .nav2 .right-grid .grid-col{
+    margin: 1rem .5rem .5rem .5rem;
+  }
+
 }
 
 /* larger device and up --- only for large pc */
