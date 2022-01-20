@@ -312,6 +312,9 @@ label:hover{
     .photo-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+    .top-content{
+        height: 62vh;
+    }
   }
   
   /* Mobile devices*/
@@ -324,4 +327,10 @@ label:hover{
     }
 
   }
-  
+
+  @media (min-width: 991.98px) and (max-width: 1199.98px) { 
+      .top-content{
+          height: 67vh;
+      }
+
+   }

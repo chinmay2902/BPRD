@@ -309,6 +309,9 @@ h1 {
 .about-container {
   width: 250px;
 }
+.left-grid div{
+  margin-top: 2rem !important;
+}
 
  }
 
@@ -326,6 +329,17 @@ h1 {
   }
 
 }
+
+
+  @media (min-width: 991.98px) and (max-width: 1199.98px) { 
+    .about-container {
+      width: 980px;
+    }
+    .nav3 .nav-item .nav-link, .dropdown-item {
+      font-size: 0.6rem !important;
+  }
+
+   }
 
 /* larger device and up --- only for large pc */
 @media (min-width: 992px) {
