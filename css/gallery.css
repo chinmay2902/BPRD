@@ -328,6 +328,16 @@ label:hover{
 
   }
 
+  @media (max-width: 575.98px) { 
+    .photo-gallery {
+        grid-template-columns: none;
+    }
+    .intro_heading {
+        font-size: 29px;
+
+    }
+  }
+
   @media (min-width: 991.98px) and (max-width: 1199.98px) { 
       .top-content{
           height: 67vh;
