@@ -292,6 +292,26 @@ h1 {
   }
 }
 
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .nav2 .right-grid .grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nav2 h1 {
+  font-size: .8rem;
+}
+.nav2 .right-grid img {
+  width: 61px;
+  height: 20px;
+  border-radius: 0.2rem;
+}
+.about-container {
+  width: 250px;
+}
+
+ }
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .nav2 .grid-container{
     display: grid;
