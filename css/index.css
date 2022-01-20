@@ -75,6 +75,7 @@ h1 {
 .nav3 .nav-item .nav-link,
 .dropdown-item {
   color: white !important;
+  font-size: .8rem !important;
 }
 .nav3 .nav-item:hover,
 .dropdown-item:hover {
@@ -104,6 +105,7 @@ h1 {
 }
 .nav4 a{
   text-decoration: none;
+  font-size: .8rem !important;
 }
 .scrollBar{
   display:grid;
